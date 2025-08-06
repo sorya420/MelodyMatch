@@ -1,0 +1,138 @@
+/* .concerts-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  /* background: linear-gradient(to bottom right, #ff3c5f, #6b00b6); */
+    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Blue gradient */
+  /* min-height: 100vh; */ 
+/* }  */
+.concerts-page {
+  padding: 2rem;
+  min-height: 100vh;
+  width: 100vw; /* Full width */
+  margin: 0 auto;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Blue gradient */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* Prevent unwanted horizontal scroll */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.concert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.concert-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.concert-card:hover {
+  transform: translateY(-5px);
+}
+
+.concert-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.concert-card .info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.concert-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.concert-card p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.concert-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: #ff3c5f;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.concert-card a:hover {
+  background-color: #e6334e;
+}
+
+/* ─────────── layout tweaks for new card ─────────── */
+.music-card .small-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.cta-title {
+  margin: 24px 0 12px;
+  font-size: 1.2rem;
+}
+
+.concert-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff0066 0%, #ff5f6d 100%);
+  color: #fff;
+  transition: transform 0.25s;
+}
+
+.concert-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* chat input row keeps your old inline styles but in CSS */
+.chat-input-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.chat-input-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.chat-input-row button {
+  background: #ff6a88;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+

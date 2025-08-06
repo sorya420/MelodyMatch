@@ -1,0 +1,115 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  top: 100px;
+}
+
+.chat-container h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+/* Message display area */
+.chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden; /* no scroll */
+}
+
+/* Messages */
+.msg-you, .msg-them {
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: white;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.msg-you {
+  background: linear-gradient(135deg, #6a0572, #9b1b8e);
+  align-self: flex-end;
+}
+
+.msg-them {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  align-self: flex-start;
+}
+
+
+/* Input section */
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.input-box input::placeholder {
+  color: #ddd;
+}
+
+.input-box input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input-box button {
+  background: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.input-box button:hover {
+  background: #ff416c;
+}
+
+.close-chat {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffffcc;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.25s ease;
+ 
+}
+
+.close-chat:hover {
+  background: rgba(255, 77, 109, 0.2);
+  color: #ff4d6d;
+  transform: scale(1.1);
+  box-shadow: 0 0 6px #ff4d6d66;
+}

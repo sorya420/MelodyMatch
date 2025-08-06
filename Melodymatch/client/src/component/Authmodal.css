@@ -1,0 +1,146 @@
+/* Background blur layer */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #141414d9;
+  z-index: 2000;
+}
+
+/* Modal container */
+.auth-modal.vibrant-theme {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #4c00ff, #ff005c);
+  border-radius: 20px;
+  padding: 2.2rem;
+  width: 90%;
+  max-width: 420px;
+  z-index: 3000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  animation: slideIn 0.4s ease;
+}
+
+body.modal-open .navbar {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+
+/* Entrance animation */
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 6px;
+  transition: transform 0.2s ease;
+}
+.close-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Modal headings */
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.modal-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  color: #ffcc70;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Input fields */
+.auth-form-container input[type="email"],
+.auth-form-container input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff15;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.auth-form-container input::placeholder {
+  color: #e0e0e0;
+}
+
+.auth-form-container input:focus {
+  background-color: #ffffff25;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submit-button:hover {
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+}
+
+/* Error message */
+.error-message {
+  color: #ffbaba;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Divider */
+.divider {
+  margin: 2rem 0 1rem;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Bottom section */
+.get-app-text {
+  text-align: center;
+  color: #ffe2f2;
+  font-size: 1rem;
+  margin-top: 0;
+}
